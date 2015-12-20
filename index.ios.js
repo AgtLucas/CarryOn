@@ -12,42 +12,38 @@ var {
   View,
 } = React;
 
-var CarryOn = React.createClass({
-  render: function() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+class CarryOn extends React.Component {
+  render() {
+    return(
+      <View>
+        <View style={styles.toolbar}>
+          <Text style={styles.toolbarButton}>Add</Text>
+          <Text style={styles.toolbarTitle}>The Title</Text>
+          <Text style={styles.toolbarButton}>Like</Text>
+        </View>
       </View>
     );
   }
-});
+}
 
 var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+  toolbar: {
+    backgroundColor: '#08c',
+    paddingTop: 30,
+    paddingBottom: 10,
+    flexDirection: 'row'
   },
-  welcome: {
-    fontSize: 20,
+  toolbarButton: {
+    width: 50,
+    color: '#fff',
+    textAlign: 'center'
+  },
+  toolbarTitle: {
+    color: '#fff',
     textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    fontWeight: 'bold',
+    flex: 1
+  }
 });
 
 AppRegistry.registerComponent('CarryOn', () => CarryOn);
