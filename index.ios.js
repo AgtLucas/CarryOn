@@ -2,15 +2,15 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-'use strict';
+'use strict'
 
-var React = require('react-native');
+var React = require('react-native')
 var {
   AppRegistry,
   StyleSheet,
   Text,
   View,
-} = React;
+} = React
 
 class CarryOn extends React.Component {
   render() {
@@ -26,7 +26,7 @@ class CarryOn extends React.Component {
           <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</Text>
         </View>
       </View>
-    );
+    )
   }
 }
 
@@ -56,6 +56,6 @@ var styles = StyleSheet.create({
     flex: 1,
     padding: 10
   }
-});
+})
 
-AppRegistry.registerComponent('CarryOn', () => CarryOn);
+AppRegistry.registerComponent('CarryOn', () => CarryOn)
